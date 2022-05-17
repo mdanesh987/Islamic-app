@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/p_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/p_leading_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                android:src="@drawable/qibla"/>
+            <TextView
+                android:layout_toRightOf="@id/p_leading_icon"
+                android:id="@+id/p_name"
+                android:layout_centerVertical="true"
+                android:textColor="@color/card_back"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="Fajr"
+                />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/time"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:text="@string/time"/>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
